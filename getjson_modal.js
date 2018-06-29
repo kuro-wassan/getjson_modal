@@ -13,7 +13,6 @@ $(function() {
   $.getJSON("data.json", null, function(data){
     jsonData = data;
     getData = true;
-    console.log('getdata');
 
     //画像のプリロード
     for(var n in jsonData){
@@ -27,7 +26,6 @@ $(function() {
   $('.buttonbox_item_button, #modal_overlay, #modal_box_inner_btn').on('click', function(e) {
     e.preventDefault();
     var $href = $(this).attr('data-href');
-    console.log($href);
 
     if(!display && getData){
       dataParser (

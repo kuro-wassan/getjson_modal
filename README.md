@@ -1,5 +1,6 @@
-# getjson_modal
+# getjson_modal.js
 同サーバー内にあるJSONデータを取り出して、モーダルウィンドウで表示させる簡易jsソース。jQueryを使用。
+
 クソコードです。
 
 ## 使い方
@@ -39,4 +40,5 @@
 ```
 
 `applicableData["hoge"]`のhogeに呼び出したいJSON内のキーを指定してください。
+
 その他HTMLはご自身でカスタマイズください。

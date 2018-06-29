@@ -1,0 +1,29 @@
+{
+  "dog":
+    {
+    "imglink":"img/dog_chihuahua_choco_tan.png",
+    "ttl":"犬",
+    "txt":"これは犬です。これは犬です。"
+    }
+  ,
+  "cat":
+    {
+    "imglink":"img/neko_punch.png",
+    "ttl":"猫",
+    "txt":"これは猫です。これは猫です。"
+    }
+  ,
+  "giraffe":
+    {
+    "imglink":"img/animal_stand_kirin.png",
+    "ttl":"きりん",
+    "txt":"これはきりんです。これはきりんです。"
+    }
+  ,
+  "elephant":
+    {
+    "imglink":"img/animal_zou.png",
+    "ttl":"象",
+    "txt":"これは象です。これは象です。"
+    }
+}

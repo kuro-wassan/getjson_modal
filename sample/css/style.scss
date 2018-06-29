@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 0;
+}
+.buttonbox {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  list-style: none;
+  justify-content: space-between;
+
+  .buttonbox_item_button {
+    cursor: pointer;
+  }
+
+}
+.imgpreload {
+  display: none;
+}
+.modal {
+  display: none;
+
+  .modal_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.8);
+  }
+  .modal_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+  }
+  .modal_box_inner {
+    position: relative;
+    padding: 30px;
+  }
+  .modal_box_inner_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-color: #e5f5f6;
+    color: #00a0a8;
+    font-size: 3rem;
+    line-height: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .modal_box_inner_contents {
+    text-align: center;
+    color: #00a0a8;
+    font-weight: bold;
+    line-height: 1.36;
+  }
+  .modal_box_inner_contents_ttl {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  .modal_box_inner_contents_description_img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .modal_box_inner_contents_description_txt {
+    font-size: 1.6rem;
+  }
+
+}

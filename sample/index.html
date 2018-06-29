@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>同ドメイン内にあるJSONデータを取り出してモーダルウィンドウで表示させる。</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- button -->
+    <ul class="buttonbox">
+      <li class="buttonbox_item">
+        <button class="buttonbox_item_button" data-href="dog">犬</button>
+      </li>
+      <li class="buttonbox_item">
+        <button class="buttonbox_item_button" data-href="cat">猫</button>
+      </li>
+      <li class="buttonbox_item">
+        <button class="buttonbox_item_button" data-href="giraffe">きりん</button>
+      </li>
+      <li class="buttonbox_item">
+        <button class="buttonbox_item_button" data-href="elephant">ぞう</button>
+      </li>
+    </ul>
+    <!-- button/ -->
+
+    <div class="imgpreload" id="imgpreload"></div>
+
+    <!-- modal -->
+    <div class="modal" id="modal">
+      <div class="modal_overlay" id="modal_overlay"></div>
+      <div class="modal_box" id="modal_box">
+        <div class="modal_box_inner">
+          <button class="modal_box_inner_btn" id="modal_box_inner_btn">×</button>
+          <dl class="modal_box_inner_contents" id="modal_box_inner_contents">
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!-- modal/ -->
+
+  </div>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script defer src="getjson_modal.js"></script>
+</body>
+</html>
